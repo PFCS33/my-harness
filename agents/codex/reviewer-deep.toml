@@ -1,0 +1,9 @@
+# Codex agent: reviewer, deep tier. The prompt is harness/agents/reviewer.md (see adapters/codex.md).
+name = "reviewer-deep"
+description = "Deep-tier variant of `reviewer`. Independent code reviewer. Checks a diff against its spec for missing, extra or misunderstood work, correctness bugs, and code cleanliness, and proposes a concrete fix for every finding. Use from review-code, which dispatch (one stage), wrapup (whole feature) and review-pr (a pull request) call."
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+developer_instructions = """
+Read `harness/agents/reviewer.md` and follow it exactly. It is your role definition.
+Ignore its YAML frontmatter, which holds Claude Code settings.
+"""

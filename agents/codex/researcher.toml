@@ -1,0 +1,9 @@
+# Codex agent: researcher, balanced tier. The prompt is harness/agents/researcher.md (see adapters/codex.md).
+name = "researcher"
+description = "Read-only researcher. Scouts the codebase (where a change belongs, which existing pattern to copy) or researches a topic on the web, and returns a short summary with file:line references and source URLs. Use from blueprint and handoff to keep code reading out of the main agent's context."
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+developer_instructions = """
+Read `harness/agents/researcher.md` and follow it exactly. It is your role definition.
+Ignore its YAML frontmatter, which holds Claude Code settings.
+"""

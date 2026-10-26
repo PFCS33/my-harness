@@ -1,0 +1,9 @@
+# Codex agent: executor, fast tier. The prompt is harness/agents/executor.md (see adapters/codex.md).
+name = "executor"
+description = "Implements one approved stage handoff file exactly as written, runs its verification, and writes the Report section. Use only from the dispatch skill with a path to an approved handoff; never for open-ended or unplanned work."
+model = "gpt-6-luna"
+model_reasoning_effort = "medium"
+developer_instructions = """
+Read `harness/agents/executor.md` and follow it exactly. It is your role definition.
+Ignore its YAML frontmatter, which holds Claude Code settings.
+"""

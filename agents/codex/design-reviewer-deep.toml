@@ -1,0 +1,9 @@
+# Codex agent: design-reviewer, deep tier. The prompt is harness/agents/design-reviewer.md (see adapters/codex.md).
+name = "design-reviewer-deep"
+description = "Deep-tier variant of `design-reviewer`. Independent design reviewer. Looks for a better shape for a change, one that deletes complexity instead of rearranging it, and proposes at most 3 concrete redesigns with their benefit and cost. Use from review-code only, when its design trigger fires."
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+developer_instructions = """
+Read `harness/agents/design-reviewer.md` and follow it exactly. It is your role definition.
+Ignore its YAML frontmatter, which holds Claude Code settings.
+"""

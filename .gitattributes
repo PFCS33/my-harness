@@ -1,0 +1,4 @@
+# Harness-repo-only files: git archive (the installer's export) leaves them out.
+research/      export-ignore
+.gitattributes export-ignore
+.gitignore     export-ignore
